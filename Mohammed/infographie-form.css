@@ -1,0 +1,50 @@
+body {
+  background-image: url(images/douakh.avif);
+  height: 250px;
+}
+
+.mode-for-p {
+  color: gray;
+  margin-left: 5px;
+  font-size: 15px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.para-gris {
+  font-size: 16px;
+  color: #505050;
+  line-height: 30px;
+}
+
+.mode-for {
+  display: flex;
+}
+
+.barre-jaune2 {
+  background-color: rgb(255, 187, 0);
+  width: 6px;
+  height: 40px;
+  margin-top: 13px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.images-hidden {
+  border: none;
+  background-color: rgb(229, 224, 224);
+  color: rgb(106, 104, 104);
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.images-hidden:hover {
+  opacity: 0.6;
+}
+
+.image-info {
+  display: none;
+}
+

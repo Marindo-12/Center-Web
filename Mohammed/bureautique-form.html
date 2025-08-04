@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bureautique</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="concours.css">
+  <link rel="stylesheet" href="media-con.css">
+  <link rel="stylesheet" href="bureautique-form.css">
+</head>
+<body>
+  <header id="main-header">
+    <a href="accueil.html" class="ffdd">
+      <div class="left-section">
+        <img src="images/search.png" class="logo">
+        <i><span class="info">InfoS</span></i>    
+      </div>
+    </a>  
+    <div class="middle-section">
+      <nav class="navbar">
+        <a href="accueil.html" class="acc">ACCUEIL</a>
+        <div class="propos">
+          <a href="#"  class="js-link ho">A PROPOS D'INFO SALOUA</a>
+          <span class="fleche"></span>
+          <div class="propos-content">
+            <a href="#" class="propos-item">Saloua</a>
+            <a href="#" class="propos-item">Carrières</a>
+            <a href="#" class="propos-item">Partenaires</a>
+          </div>
+        </div>      
+        <div class="formations">
+          <a href="#" class="ho">FORMATIONS</a>
+          <span class="fleche"></span>
+          <div class="formations-content">
+            <a href="concours.html">Formation Préparation Aux Concours</a>
+            <a href="langues.html">Formation Langues Étrangères</a>
+            <a href="infographie.html">Formation en Infographie</a>
+            <a href="bureautique.html">Formation en Bureautique</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="right-section">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/212661532326" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <div class="choix" onclick="toggleMenu();">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div id="sidebar" class="hidden">
+      <div class="sidebar-content">
+        <div class="sidebar-first">
+          <img src="images/search.png" class="logo">
+          <i><span class="info">InfoS</span></i>
+        </div>
+        <nav class="navbara">
+          <a href="accueil.html" class="acc">ACCUEIL</a>
+          <div class="proposC">
+            <div class="fl">
+              <a href="#" onclick="propos(event);" class="nav-item propos-link">A PROPOS D'INFO SALOUA</a>
+              <span class="fleches"></span>
+            </div>
+            <div class="propos-contentC">
+              <a href="#" class="propos-iteme">Saloua</a>
+              <a href="#" class="propos-iteme">Carrières</a>
+              <a href="#" class="propos-iteme">Partenaires</a>
+            </div>
+          </div>
+          <div class="formationsC">
+            <div class="fl">
+              <a href="#" onclick="formations(event);" class="nav-item formations-link">FORMATIONS</a>
+              <span class="fleches"></span>
+            </div>           
+            <div class="formations-contentC">
+              <a href="concours.html" class="js-forma js-link con">Formation Préparation Aux Concours</a>
+              <a href="langues.html" class="con">Formation Langues Étrangères</a>
+              <a href="infographie.html" class="con">Formation en Infographie</a>
+              <a href="bureautique.html" class="con">Formation en Bureautique</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+  </header>
+  <main>
+    <div class="main-h2">
+      <h2 h2>REJOIGNEZ NOUS! REJOIGNEZ L'AVENTURE</h1>
+    </div>
+    <div class="third-part">
+      <div class="second-part">
+        <div class="second-part-1">
+          <div class="barre-jaune3"></div>
+          <p class="ins-p">INSCRIPTION FORMATION EN BUREAUTIQUE</p>
+        </div>
+      </div>
+      <p class="para-gris">
+        Après avoir rempli le formulaire, nous allons étudier ta
+        candidature avec le plus grand intérêt et nous reviendrons
+        vers toi le plutôt possible en t'invitant à un échange avec 
+        notre équipe pédagogique.
+      </p>
+      <p class="oblig"><span class="fois">*</span> Obligatoire</p>
+      <h3 class="conc-h3">VOS INFORMATIONS:</h3>
+      <form id="form-con" method="post">
+        <div class="informations">
+          <input type="radio" class="m" id="m" value="M" name="sexe"><label for="m" class="label-c">M</label>
+          <input type="radio" class="f" id="f" value="F" name="sexe"><label for="f" class="label-c">F</label>
+          <span class="span-f-m span">Veuillez checker un seul choix</span>
+        </div>
+        <div class="inline">
+          <div class="informations">
+            <label for="nom" class="label-c">Nom <span class="fois">*</span></label><br>
+            <input type="text" placeholder="Saisir votre nom" class="input js-nom" id="nom" name="nom">
+            <span class="span-nom span">Minimum 2 caracteres</span>
+          </div>
+          <div class="informations">
+            <label for="prenom" class="label-c">Prénom <span class="fois">*</span></label><br>
+            <input type="text" placeholder="Saisir votre prénom" class="input js-prenom" id="prenom" name="prenom">
+            <span class="span-prenom span">Minimum 2 caracteres</span>
+          </div>
+        </div>
+        <div class="inline">
+          <div class="informations">
+            <label for="email" class="label-c">E-mail <span class="fois">*</span></label><br>
+            <input type="email" placeholder="Entrer votre email" class="input js-email" id="email" name="email">
+            <span class="span-email span">email invalid (ex:fake@gmail.com)</span>
+          </div>
+          <div class="informations">
+            <label for="email-c" class="label-c">E-mail De Confirmation<span class="fois">*</span></label><br>
+            <input type="email" placeholder="Confirmer votre email" class="input js-emailC" id="emailC" name="emailC">
+            <span class="span-emailC span">Email de confirmation non valide</span>
+          </div>
+        </div>
+        <div class="inline">
+          <div class="informations">
+            <label for="nom" class="label-c">Téléfone <span class="fois">*</span></label><br>
+            <input type="text" placeholder="Entrer votre numéro téléphone ex:0785xxxx41" class="input js-tel" id="tel" name="tel">
+            <span class="span-tel span">Numero inferieur à 10 chiffres</span>
+          </div>
+          <div class="informations">
+            <label for="nom" class="label-c">Age <span class="fois">*</span></label><br>
+            <input type="text" placeholder="Entrer votre age" class="input js-age" id="age" name="age">
+          </div>
+        </div>
+        <h3 class="conc-h3">CHOIX DU BUREAUTIQUE :</h3>
+        <div class="inline">
+          <div class="informations">
+            <label for="bureau" class="label-c">Type de bureautique:<span class="fois">*</span></label><br>
+            <input type="checkbox" name="bureau" value="word" io> <span class="b-el">Word</span>
+            <input type="checkbox" name="bureau" value="excel" io> <span class="b-el">Excel</span>
+            <input type="checkbox" name="bureau" value="powerpoint" io> <span class="b-el">Power Point</span>
+            <input type="checkbox" name="bureau" value="acces" io> <span class="b-el">Acces</span>
+          </div>
+          <div class="informations">
+            <label for="nom" class="label-c">Niveau: <span class="fois">*</span></label><br>
+            <select class="select js-conco" id="niveau" name="niveau">
+              <option value="deb">Débutant</option>
+              <option value="moy">Moyen</option>
+              <option value="rea-pr">Réaliser des Projects</option>
+            </select>
+          </div>
+        </div>
+          <div class="informations">
+            <label for="" class="label-c">Mode de formation <span class="fois">*</span></label>
+            <div class="mode-for-div">
+              <div class="mode-for">
+                <input type="radio" class="loca-radio" value="presentiel" id="loca" name="mode">
+                <div class="location-div">
+                  <p class="mode-for-p">En présentiel ( Méknes )</p>
+                  <span class="js-location loca">Hamria Rue Hassan 2 même entrée Pizeria Milano</span>
+                </div>
+              </div>
+              <div class="mode-for mode-for1">
+                <input type="radio" class="enLigne-radio" value="enLigne" id="enLigne" name="mode">
+                <p class="mode-for-p">En Ligne</p>
+              </div>
+            </div>
+          </div>
+        <div class="informations">
+          <div class="last">
+            <label>
+              <input type="checkbox" name="auto"><div>J'autorise ce site à conserver mes données dans le but de me rencontacter et dans le respect de la réglementation de la protection des données.<span class="fois">*</span></div>
+            </label>
+            <label>
+              <input type="checkbox" name="auto"><div>J'atteste avoir lu et accepté <a href="#">les conditions générales de vente</a> et<a href="#">les conditions générales de confidentialité</a>.<span class="fois">*</span></div>
+            </label>         
+          </div>
+        </div>
+        <div class="form-button-div">
+          <button type="submit" class="form-button">Envoyer</button>
+        </div>
+      </form>
+    </div>
+    <div class='enregistrement-suc'>           
+      <div class='enregi-content'>
+        <span class='close' onclick='closeModal();'>&times;</span>
+        <div class="content-1">
+          <img src="images/check.png" class="check">
+          <h2>Enregistrer avec Succes</h2> 
+        </div>
+      </div>
+    </div>   
+  </main>
+  <footer class="footer1">
+    <div class="footer-div1">
+      <h5 class="footer-h5">Info Saloua</h5>
+      <p class="para-info">
+        Info Saloua est le leader de la preparation aux concours
+        au Maroc. Notre mission est d'assurer à chaque étudiant
+        quels que soient aon origine, son milieu social, ou sa 
+        situation financière, une formation de qualité de réussir
+        sa carrière académique et professionnelle!
+      </p>
+    </div>
+    <div class="footer-div2">
+      <h5 class="footer-h5">Formations</h5>
+      <ul class="list-f">
+        <li><a href="concours.html">Préparation aux concours</a></li>
+        <li><a href="langues.html">Cours de langues présentiel</a></li>
+        <li><a href="infographie.html">Formation en Infographie</a></li>
+        <li><a href="bureautique.html">Formation en Bureautique</a></li>
+      </ul>
+    </div>     
+    <div class="footer-div3">
+      <h5 class="footer-h5">Centres De Formations : </h5>
+      <p class="para-info">
+        Méknes : 14 avenue Hassan II Hamria Près du marché central
+        même entrée Pizerria Milano
+      </p>
+    </div>   
+    <div class="footer-div4">
+      <h5 class="footer-h5">Contacts</h5>
+      <a href="https://wa.me/212661532326" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <p class="para-info">
+          Méknes : 0661532326 / 0691060245
+        </p> 
+      </a>      
+    </div>   
+  </footer>
+  <footer class="footer2">
+    <div class="footer2-div">
+      Tout les droits sont réservés &copy; InfoS
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="validation-form.js"></script>
+  <script>
+    document.getElementById('form-con').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+
+      fetch('bureautique.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (!response.ok) {
+          return response.text().then(text => { throw new Error(text); });
+        }
+        return response.text();
+      })
+      .then(result => {
+        if (result.trim() === 'success') {
+          document.querySelector('.enregistrement-suc').style.display = 'block';
+          form.reset();
+        } else {
+          alert("Erreur: " + result);
+        }
+      })
+      .catch(error => {
+        alert("Erreur AJAX: " + error.message);
+      });
+    });
+
+    function closeModal() {
+      document.querySelector('.enregistrement-suc').style.display = "none";
+    }
+  </script>
+</body>
+</html>

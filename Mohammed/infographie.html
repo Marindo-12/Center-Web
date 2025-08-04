@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formation Infographie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="infographie.css">
+</head>
+<body>
+  <header id="main-header">
+    <a href="accueil.html" class="ffdd">
+      <div class="left-section">
+        <img src="images/search.png" class="logo">
+        <i><span class="info">InfoS</span></i>    
+      </div>
+    </a>  
+    <div class="middle-section">
+      <nav class="navbar">
+        <a href="accueil.html" class="acc">ACCUEIL</a>
+        <div class="propos">
+          <a href="#"  class="js-link ho">A PROPOS D'INFO SALOUA</a>
+          <span class="fleche"></span>
+          <div class="propos-content">
+            <a href="#" class="propos-item">Saloua</a>
+            <a href="#" class="propos-item">Carrières</a>
+            <a href="#" class="propos-item">Partenaires</a>
+          </div>
+        </div>      
+        <div class="formations">
+          <a href="#" class="ho">FORMATIONS</a>
+          <span class="fleche"></span>
+          <div class="formations-content">
+            <a href="concours.html">Formation Préparation Aux Concours</a>
+            <a href="langues.html">Formation Langues Étrangères</a>
+            <a href="infographie.html">Formation en Infographie</a>
+            <a href="bureautique.html">Formation en Bureautique</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="right-section">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/212661532326" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <div class="choix" onclick="toggleMenu();">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div id="sidebar" class="hidden">
+      <div class="sidebar-content">
+        <div class="sidebar-first">
+          <img src="images/search.png" class="logo">
+          <i><span class="info">InfoS</span></i>
+        </div>
+        <nav class="navbara">
+          <a href="accueil.html" class="acc">ACCUEIL</a>
+          <div class="proposC">
+            <div class="fl">
+              <a href="#" onclick="propos(event);" class="nav-item propos-link">A PROPOS D'INFO SALOUA</a>
+              <span class="fleches"></span>
+            </div>
+            <div class="propos-contentC">
+              <a href="#" class="propos-iteme">Saloua</a>
+              <a href="#" class="propos-iteme">Carrières</a>
+              <a href="#" class="propos-iteme">Partenaires</a>
+            </div>
+          </div>
+          <div class="formationsC">
+            <div class="fl">
+              <a href="#" onclick="formations(event);" class="nav-item formations-link">FORMATIONS</a>
+              <span class="fleches"></span>
+            </div>           
+            <div class="formations-contentC">
+              <a href="concours.html" class="js-forma js-link con">Formation Préparation Aux Concours</a>
+              <a href="langues.html" class="con">Formation Langues Étrangères</a>
+              <a href="infographie.html" class="con">Formation en Infographie</a>
+              <a href="bureautique.html" class="con">Formation en Bureautique</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+  </header>
+  <main>
+    <div class="general">
+      <div class="card">
+        <div class="card-header-photo">
+          <img src="images/adobe-photoshop.png" class="info-logo">
+          Photoshop – Retouche et Création d’Images
+        </div>
+        <div class="card-content card-content-photo">
+          <p>
+            Notre formation Photoshop vous permettra de maîtriser ce logiciel essentiel pour la retouche photo et la création graphique.
+            Vous apprendrez à corriger des photos, à manipuler les calques et les masques, à utiliser les filtres, et à créer des compositions complexes mêlant images et textes.
+            Le cours couvre également la création d’affiches, de bannières web, et la préparation de visuels pour les réseaux sociaux.
+            Que vous soyez débutant ou souhaitiez perfectionner vos compétences, ce module vous donnera une maîtrise pratique et créative de Photoshop.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header-ill">
+          <img src="images/adobe-illustrator.png" class="info-logo">
+          Illustrator – Dessin et Illustration Vectorielle
+        </div>
+        <div class="card-content card-content-ill">
+          <p>
+            Dans cette formation, vous apprendrez à créer des dessins vectoriels professionnels avec Adobe Illustrator.
+            Vous étudierez les outils de dessin, les formes géométriques, les courbes de Bézier et les typographies artistiques.
+            Illustrator est l’outil de référence pour réaliser des logos, des icônes, des infographies, et des illustrations destinées à l’impression ou au web.
+            La formation met l’accent sur la précision du dessin vectoriel et sur la création de designs adaptables à toutes tailles sans perte de qualité.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header-ind">
+          <img src="images/adobe-indesign.png" class="info-logo">
+          InDesign – Mise en Page et Publication
+        </div>
+        <div class="card-content card-content-ind">
+          <p>
+            La formation InDesign est dédiée à la mise en page professionnelle de documents imprimés et numériques.
+            Vous apprendrez à concevoir des flyers, brochures, magazines, catalogues, et livres avec des gabarits efficaces.
+            Le cours aborde la gestion des blocs de texte et d’image, les styles de paragraphe, la typographie avancée et l’exportation des fichiers prêts pour l’imprimeur.
+            InDesign est l’outil idéal pour toute personne travaillant dans l’édition, la communication et la publicité.
+          </p>
+        </div>
+      </div>
+  
+      <div style="text-align: center;">
+        <a class="button" href="infographie-form.html">S'inscrire à une formation</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer1">
+    <div class="footer-div1">
+      <h5 class="footer-h5">Info Saloua</h5>
+      <p class="para-info">
+        Info Saloua est le leader de la preparation aux concours
+        au Maroc. Notre mission est d'assurer à chaque étudiant
+        quels que soient aon origine, son milieu social, ou sa 
+        situation financière, une formation de qualité de réussir
+        sa carrière académique et professionnelle!
+      </p>
+    </div>
+    <div class="footer-div2">
+      <h5 class="footer-h5">Formations</h5>
+      <ul class="list-f">
+        <li><a href="concours.html">Préparation aux concours</a></li>
+        <li><a href="langues.html">Cours de langues présentiel</a></li>
+        <li><a href="infographie.html">Formation en Infographie</a></li>
+        <li><a href="bureautique.html">Formation en Bureautique</a></li>
+      </ul>
+    </div>     
+    <div class="footer-div3">
+      <h5 class="footer-h5">Centres De Formations : </h5>
+      <p class="para-info">
+        Méknes : 14 avenue Hassan II Hamria Près du marché central
+        même entrée Pizerria Milano
+      </p>
+    </div>   
+    <div class="footer-div4">
+      <h5 class="footer-h5">Contacts</h5>
+      <a href="https://wa.me/212661532326" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <p class="para-info">
+          Méknes : 0661532326 / 0691060245
+        </p> 
+      </a>      
+    </div>   
+  </footer>
+  <footer class="footer2">
+    <div class="footer2-div">
+      Tout les droits sont réservés &copy; InfoS
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

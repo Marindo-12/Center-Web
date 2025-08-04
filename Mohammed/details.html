@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="details.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Details Concours</title>
+</head>
+<body>
+  <header id="main-header">
+    <a href="accueil.html" class="ffdd">
+      <div class="left-section">
+        <img src="images/search.png" class="logo">
+        <i><span class="info">InfoS</span></i>    
+      </div>
+    </a>  
+    <div class="middle-section">
+      <nav class="navbar">
+        <a href="accueil.html" class="acc">ACCUEIL</a>
+        <div class="propos">
+          <a href="#"  class="js-link ho">A PROPOS D'INFO SALOUA</a>
+          <span class="fleche"></span>
+          <div class="propos-content">
+            <a href="#" class="propos-item">Saloua</a>
+            <a href="#" class="propos-item">Carrières</a>
+            <a href="#" class="propos-item">Partenaires</a>
+          </div>
+        </div>      
+        <div class="formations">
+          <a href="#" class="ho">FORMATIONS</a>
+          <span class="fleche"></span>
+          <div class="formations-content">
+            <a href="concours.html">Formation Préparation Aux Concours</a>
+            <a href="langues.html">Formation Langues Étrangères</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="right-section">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/212661532326" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <div class="choix" onclick="toggleMenu();">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div id="sidebar" class="hidden">
+      <div class="sidebar-content">
+        <div class="sidebar-first">
+          <img src="images/search.png" class="logo">
+          <i><span class="info">InfoS</span></i>
+        </div>
+        <nav class="navbara">
+          <a href="accueil.html" class="acc">ACCUEIL</a>
+          <div class="proposC">
+            <div class="fl">
+              <a href="#" onclick="propos(event);" class="nav-item propos-link">A PROPOS D'INFO SALOUA</a>
+              <span class="fleches"></span>
+            </div>
+            <div class="propos-contentC">
+              <a href="#" class="propos-iteme">Saloua</a>
+              <a href="#" class="propos-iteme">Carrières</a>
+              <a href="#" class="propos-iteme">Partenaires</a>
+            </div>
+          </div>
+          <div class="formationsC">
+            <div class="fl">
+              <a href="#" onclick="formations(event);" class="nav-item formations-link">FORMATIONS</a>
+              <span class="fleches"></span>
+            </div>           
+            <div class="formations-contentC">
+              <a href="concours.html" class="js-forma js-link con">Formation Préparation Aux Concours</a>
+              <a href="langues.html" class="con">Formation Langues Étrangères</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+  </header>
+  <main>
+    <div class="first">
+      <div class="new-general">
+        <div class="new-general1">
+          <img src="images/medecine.jpeg" class="new-general1-image">
+        </div>
+        <div class="new-general2">
+          <p class="conco-name">Médecine</p>
+          <p class="prix">1500 DH</p>
+        </div>
+        <div class="new-general2">
+          <p class="mat">Mathématique / Physique-Chimie</p>
+          <p class="hou">30H</p>
+        </div>
+        <div class="new-general2">
+          <p class="mat">SVT</p>
+          <p class="hou">12H</p>
+        </div>
+      </div> 
+      <div class="new-general">
+        <div class="new-general1">
+          <img src="images/ensam.png" class="new-general1-image ensam">
+        </div>
+        <div class="new-general2">
+          <p class="conco-name">ENSAM</p>
+          <p class="prix">1500 DH</p>
+        </div>
+        <div class="new-general2">
+          <p class="mat">Mathématique / Physique-Chimie</p>
+          <p class="hou">30H</p>
+        </div>
+      </div> 
+    </div>
+    <div class="second">
+      <div class="new-general">
+        <div class="new-general1">
+          <img src="images/ensa-logo-color.png" class="new-general1-image ensa">
+        </div>
+        <div class="new-general2">
+          <p class="conco-name">ENSA</p>
+          <p class="prix">1200 DH</p>
+        </div>
+        <div class="new-general2">
+          <p class="mat">Mathématique / Physique-Chimie</p>
+          <p class="hou">30H</p>
+        </div>
+      </div> 
+      <div class="new-general">
+        <div class="new-general1">
+          <img src="images/encg.JPG" class="new-general1-image encg">
+        </div>
+        <div class="new-general2">
+          <p class="conco-name">Médecine</p>
+          <p class="prix">1500 DH</p>
+        </div>
+        <div class="new-general2">
+          <p class="mat">Mathématique</p>
+          <p class="hou">12H</p>
+        </div>
+        <div class="new-general2">
+          <p class="mat">Français / Culture Géneral</p>
+          <p class="hou">15H</p>
+        </div>
+      </div> 
+    </div>
+    <div class="third">
+      <div class="new-general">
+        <div class="new-general1 ena-div">
+          <img src="images/ena.jpeg" class="new-general1-image ena">
+        </div>
+        <div class="new-general2">
+          <p class="conco-name">ENA</p>
+          <p class="prix">1200 DH</p>
+        </div>
+        <div class="new-general2">
+          <p class="mat">Dessin de Perspective <span style="font-size: 14px;">(2d,3d)</span></p>
+          <p class="hou">12H</p>
+        </div>
+        <div class="new-general2">
+          <p class="mat">Géométerie - Culture Générale</p>
+          <p class="hou">12H</p>
+        </div>
+      </div> 
+    </div>
+    <div class="button-retourner">
+      <a href="concours.html" class="retourner">Retourner</a>
+    </div> 
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.mode-for-p {
+  color: gray;
+  margin-left: 5px;
+  font-size: 15px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.mode-for {
+  display: flex;
+  align-items: center;
+}
+
+.para-gris {
+  font-size: 16px;
+  color: #505050;
+  line-height: 30px;
+}
+
+.barre-jaune3 {
+  background-color: rgb(255, 187, 0);
+  width: 6px;
+  height: 40px;
+  margin-top: 13px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+[io] {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.b-el {
+  font-size: 15px;
+  color: gray;
+}

@@ -1,0 +1,372 @@
+@media screen and (max-width: 768px) {
+  .middle-section {
+    display: none;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+  } 
+
+  #main-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .choix {
+    display: block;
+  }
+
+  .formations-s {
+    display: grid;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .prepa-c {
+    margin-bottom:30px;
+  }
+  .prepa-c,
+  .langue {
+    width: 200px;
+    height: 270px;
+    z-index: 2;
+    position: relative;
+    background-color: white;
+  }
+
+  .left-section {
+    margin-left: 50px;
+  }
+
+  .right-section {
+    margin-right: 50px;
+  }
+
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbara {
+    display: grid;
+    padding: 20px;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .acc {
+    font-weight: bold;
+    color: red;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .fl {
+    position: relative;
+  }
+
+  .fleches {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid black;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  
+  .fleches.visible {
+    transform: rotate(-90deg);
+    border-top: 6px solid black;
+  }
+
+  .sidebar-content {
+    padding: 10px;
+  }
+
+  .sidebar-first {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  #sidebar.visible {
+    transform: translateX(0);
+  }
+
+  #overlay.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbara a,
+  .proposC a,
+  .formationsC a {
+    text-decoration: none;
+  }
+
+  .propos-contentC,
+  .formations-contentC {
+    display: none;
+    padding-left: 20px;
+  }
+
+  .propos-item,
+  .formations-item {
+    font-size: 0.9em;
+    color: #666;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .con,
+  .propos-iteme {
+    font-size: 0.9em;
+    color: #666;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    display: block; 
+    text-align: left;
+    white-space: normal; 
+    word-wrap: break-word; 
+  }
+
+  .propos-contentC.visible,
+  .formations-contentC.visible{
+    display: grid;
+  }
+
+  #sidebar.visible .sidebar-first {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+  .propos-item:hover,
+  .formations-item:hover {
+    color: goldenrod;
+  }
+
+  .nav-item:hover,
+  .propos-contentC:hover .propos-item:hover,
+  .formations-contentC:hover .formations-item:hover {
+    color: goldenrod;
+  }
+
+  .formations-image {
+    position: absolute;
+    height: 150px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .combine {
+    margin-top: 110px;
+  }
+
+  .plus {
+    font-size: 14.5px;
+  }
+
+  [l],[p] {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .logoN {
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+  }
+  .gra {
+    width: 40px;
+    height: 40px;
+  }
+
+  .trans {
+    width: 30px;
+    height: 30px;
+  }
+
+  .acceuil-first {
+    margin-top: 370px;
+    text-align: justify;
+    display: grid;
+    margin-bottom: 24px;
+  }
+  .acceuil-first-i {
+    width: 500px;
+    margin-left: 80px;
+    margin-top: 0;
+  }
+  .acceuil-first-d {
+    width: 500px;
+    margin-left: 80px;
+  }
+  .acceuil-first-p {
+    color: rgb(112, 111, 111);
+    line-height: 28px;
+  }
+  .acceuil-first-u {
+    margin-top: -15px;
+  }
+  .acceuil-first-l {
+    margin-left: -25px;
+  }
+  .acceuil-second {
+    margin-top: 50px;
+  }
+  .acceuil-third {
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+  }
+  .acceuil-third-p {
+    width: 480px;
+    text-align: center;
+    margin-top: -10px;
+    color: #505050;
+  }
+  .acceuil-third h2 {
+    font-size: 25px;
+  }
+  .div-ac h3 {
+    padding: 5px 120px 5px 5px;
+  }
+  .div-ac .h3-2 {
+    padding: 5px 85px 5px 5px;
+  }
+  .div-ac .h3-3 {
+    padding: 5px 265px 5px 5px;
+  }
+  .acceuil-third-p2 {
+    width: 480px;
+    margin-top: 0px;
+  }
+  .acceuil-third-i {
+    width: 280px;
+    margin-left: -160px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .acc {
+    font-weight: bold;
+    color: #333;
+  }
+  .prepa-c,
+  .langue {
+    width: 400px;
+    height: 270px;
+  }
+  .prepa-c {
+    margin-right: 60px;
+  }
+  .formations-s {
+    display: flex;
+  }
+  .acceuil-first {
+    display: flex;
+  }
+  .acceuil-first-d {
+    width: 440px;
+  }
+  .acceuil-first-i {
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+  }
+  .acceuil-third {
+    margin-top: 40px;
+    display: grid;
+    place-items: center;
+  }
+  .acceuil-third-p {
+    width: 900px;
+    text-align: center;
+    margin-top: -10px;
+    color: #505050;
+  }
+  .acceuil-second {
+    margin-top: 50px;
+  }
+  .acceuil-third h2 {
+    font-size: 25px;
+  }
+  .middle-section {
+    display: flex;
+  }
+  .choix {
+    display: none;
+  }
+  .acceuil-third-i {
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+  }
+  .div-ac h3 {
+    padding: 5px 240px 5px 5px;
+  }
+  .div-ac .h3-2 {
+    padding: 5px 200px 5px 5px;
+  }
+  .div-ac .h3-3 {
+    padding: 5px 380px 5px 5px;
+  }
+  .acceuil-forth {
+    background-attachment: fixed;
+  }
+}

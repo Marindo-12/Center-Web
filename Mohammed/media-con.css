@@ -1,0 +1,148 @@
+@media only screen and (max-width: 767px) {
+  body {
+    height: 300px;
+  }
+  [h2] {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 37px;
+    font-weight: 700;
+  }
+  main {
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: none;
+  }
+  .third-part {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main-h2 {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: -100px;
+    line-height: 80px;
+  }
+  .second-part {
+    margin-top: 100px;
+    display: grid;
+  }
+  .second-part-1 {
+    display: flex;
+  }
+  .barre-jaune,
+  .barre-jaune1,
+  .barre-jaune3 {
+    background-color: rgb(255, 187, 0);
+    width: 6px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  .ins-p {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  .para-rouge {
+    color: rgb(198, 5, 5);
+  }
+  .fois {
+    color: red;
+    font-size: 18px;
+  }
+  .oblig,
+  .label-c {
+    color: #505050;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin: 0 0 10px;
+    font-weight: bold;
+  }
+  .conc-h3 {
+    text-align: left;
+  }
+  .f {
+    margin-left: 100px;
+  }
+  .informations {
+    margin-top: 15px;
+  }
+  .input {
+    padding: 10px;
+    width: 90%;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+  .select {
+    width: 94%;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 10px;
+    margin-top: 8px;
+    padding: 10px;
+    background-color: white;
+    color: gray;
+  }
+  .last {
+    margin-top: 20px;
+  }
+
+  .last label {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    color: #505050;
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  .last label div {
+    font-family: Rubik;
+    font-weight: bold;
+  }
+  .last input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+  .last div a {
+    color: rgb(245, 176, 0);
+    text-decoration: none;
+  }
+  .last div a:hover {
+    opacity: 0.6;
+  }
+  .form-button-div {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+  }
+  .form-button {
+    background-color: goldenrod;
+    font-size: 17px;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .form-button:hover {
+    background-color: green;
+    color: white;
+  }
+  .inline {
+    display: block;
+  }
+  .inline .informations {
+    width: 100%;
+  }
+  .valide {
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  
+
+}

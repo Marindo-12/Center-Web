@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bureautique</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="bureautique.css">
+</head>
+<body>
+  <header id="main-header">
+    <a href="accueil.html" class="ffdd">
+      <div class="left-section">
+        <img src="images/search.png" class="logo">
+        <i><span class="info">InfoS</span></i>    
+      </div>
+    </a>  
+    <div class="middle-section">
+      <nav class="navbar">
+        <a href="accueil.html" class="acc">ACCUEIL</a>
+        <div class="propos">
+          <a href="#"  class="js-link ho">A PROPOS D'INFO SALOUA</a>
+          <span class="fleche"></span>
+          <div class="propos-content">
+            <a href="#" class="propos-item">Saloua</a>
+            <a href="#" class="propos-item">Carrières</a>
+            <a href="#" class="propos-item">Partenaires</a>
+          </div>
+        </div>      
+        <div class="formations">
+          <a href="#" class="ho">FORMATIONS</a>
+          <span class="fleche"></span>
+          <div class="formations-content">
+            <a href="concours.html">Formation Préparation Aux Concours</a>
+            <a href="langues.html">Formation Langues Étrangères</a>
+            <a href="infographie.html">Formation en Infographie</a>
+            <a href="bureautique.html">Formation en Bureautique</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="right-section">
+      <div class="faceb">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <span class="hidd hfa">Facebook</span>
+      </div>
+      <div class="insta">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <span class="hidd hins">Instagram</span>
+      </div>
+      <div class="wats">
+        <a href="https://wa.me/212661532326" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <span class="hidd hwa">Whatsapp</span>
+      </div>
+      <div class="choix" onclick="toggleMenu();">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div id="sidebar" class="hidden">
+      <div class="sidebar-content">
+        <div class="sidebar-first">
+          <img src="images/search.png" class="logo">
+          <i><span class="info">InfoS</span></i>
+        </div>
+        <nav class="navbara">
+          <a href="accueil.html" class="acc">ACCUEIL</a>
+          <div class="proposC">
+            <div class="fl">
+              <a href="#" onclick="propos(event);" class="nav-item propos-link">A PROPOS D'INFO SALOUA</a>
+              <span class="fleches"></span>
+            </div>
+            <div class="propos-contentC">
+              <a href="#" class="propos-iteme">Saloua</a>
+              <a href="#" class="propos-iteme">Carrières</a>
+              <a href="#" class="propos-iteme">Partenaires</a>
+            </div>
+          </div>
+          <div class="formationsC">
+            <div class="fl">
+              <a href="#" onclick="formations(event);" class="nav-item formations-link">FORMATIONS</a>
+              <span class="fleches"></span>
+            </div>           
+            <div class="formations-contentC">
+              <a href="concours.html" class="js-forma js-link con">Formation Préparation Aux Concours</a>
+              <a href="langues.html" class="con">Formation Langues Étrangères</a>
+              <a href="infographie.html" class="con">Formation en Infographie</a>
+              <a href="bureautique.html" class="con">Formation en Bureautique</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+  </header>
+  <main>
+    <h1>Formation En Bureautique</h1>
+    <div class="general">
+      <div class="first-flex">
+        <div class="card card-left cardword" onclick="showModal('word');">
+          <div g>
+            <div class="image-b">
+              <img src="images/word.png" class="image">
+            </div>
+            <p class="word">Word</p>
+          </div>
+        </div>
+        <div class="card card-right card-excel" onclick="showModal('excel');">
+          <div g>
+            <div class="image-b">
+              <img src="images/excel.png" class="image">
+            </div>
+            <p class="excel">Excel</p>             
+          </div>
+        </div>
+      </div>
+      <div class="second-flex">
+        <div class="card card-left card-pp" onclick="showModal('powerpoint');">
+          <div g>
+            <div class="image-b">
+              <img src="images/powerpoint.png" class="image">
+            </div>
+            <p class="pp">PowerPoint</p>
+          </div>
+        </div>
+        <div class="card card-right card-ac" onclick="showModal('access');">
+          <div g>
+            <div class="image-b">
+              <img src="images/acc.png" class="image">
+            </div>
+            <p class="ac">Acces</p>         
+          </div>
+        </div>
+      </div>
+      <div id="popupModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modalTitle"></h2>
+          <ul id="modalList"></ul>
+          <p class="price" id="modalPrice"></p>
+          <p id="modalDuration"></p>
+          <div class="modal-footer">
+            <button class="button" onclick="closeModal()">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div k>
+      <a href="bureautique-form.html" b>S'inscrire</a>
+    </div>
+  </main>
+  <footer class="footer1">
+    <div class="footer-div1">
+      <h5 class="footer-h5">Info Saloua</h5>
+      <p class="para-info">
+        Info Saloua est le leader de la preparation aux concours
+        au Maroc. Notre mission est d'assurer à chaque étudiant
+        quels que soient aon origine, son milieu social, ou sa 
+        situation financière, une formation de qualité de réussir
+        sa carrière académique et professionnelle!
+      </p>
+    </div>
+    <div class="footer-div2">
+      <h5 class="footer-h5">Formations</h5>
+      <ul class="list-f">
+        <li><a href="concours.html">Préparation aux concours</a></li>
+        <li><a href="langues.html">Cours de langues présentiel</a></li>
+        <li><a href="infographie.html">Formation en Infographie</a></li>
+        <li><a href="bureautique.html">Formation en Bureautique</a></li>
+      </ul>
+    </div>     
+    <div class="footer-div3">
+      <h5 class="footer-h5">Centres De Formations : </h5>
+      <p class="para-info">
+        Méknes : 14 avenue Hassan II Hamria Près du marché central
+        même entrée Pizerria Milano
+      </p>
+    </div>   
+    <div class="footer-div4">
+      <h5 class="footer-h5">Contacts</h5>
+      <a href="https://wa.me/212661532326" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <p class="para-info">
+          Méknes : 0661532326 / 0691060245
+        </p> 
+      </a>      
+    </div>   
+  </footer>
+  <footer class="footer2">
+    <div class="footer2-div">
+      Tout les droits sont réservés &copy; InfoS
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="bureautique.js"></script>
+</body>
+</html>

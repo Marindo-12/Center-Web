@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Saloua</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <header id="main-header">
+    <a href="accueil.html" class="ffdd">
+      <div class="left-section">
+        <img src="images/search.png" class="logo">
+        <i><span class="info">InfoS</span></i>    
+      </div>
+    </a>    
+    <div class="middle-section">
+      <nav class="navbar">
+        <a href="accueil.html" class="acc">ACCUEIL</a>
+        <div class="propos">
+          <a href="#"  class="js-link ho">A PROPOS D'INFO SALOUA</a>
+          <span class="fleche"></span>
+          <div class="propos-content">
+            <a href="#" class="propos-item">Saloua</a>
+            <a href="#" class="propos-item">Carrières</a>
+            <a href="#" class="propos-item">Partenaires</a>
+          </div>
+        </div>      
+        <div class="formations">
+          <a href="#" class="ho">FORMATIONS</a>
+          <span class="fleche"></span>
+          <div class="formations-content">
+            <a href="concours.html">Formation Préparation Aux Concours</a>
+            <a href="langues.html">Formation Langues Étrangères</a>
+            <a href="infographie.html">Formation en Infographie</a>
+            <a href="bureautique.html">Formation en Bureautique</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="right-section">
+      <div class="faceb">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <span class="hidd hfa">Facebook</span>
+      </div>
+      <div class="insta">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <span class="hidd hins">Instagram</span>
+      </div>
+      <div class="wats">
+        <a href="https://wa.me/212661532326" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <span class="hidd hwa">Whatsapp</span>
+      </div>
+      
+      <div class="choix" onclick="toggleMenu();">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div id="sidebar" class="hidden">
+      <div class="sidebar-content">
+        <div class="sidebar-first">
+          <img src="images/search.png" class="logo">
+          <i><span class="info">InfoS</span></i>
+        </div>
+        <nav class="navbara">
+          <a href="accueil.html" class="acc">ACCUEIL</a>
+          <div class="proposC">
+            <div class="fl">
+              <a href="#" onclick="propos(event);" class="nav-item propos-link">A PROPOS D'INFO SALOUA</a>
+              <span class="fleches"></span>
+            </div>
+            <div class="propos-contentC">
+              <a href="#" class="propos-iteme">Saloua</a>
+              <a href="#" class="propos-iteme">Carrières</a>
+              <a href="#" class="propos-iteme">Partenaires</a>
+            </div>
+          </div>
+          <div class="formationsC">
+            <div class="fl">
+              <a href="#" onclick="formations(event);" class="nav-item formations-link">FORMATIONS</a>
+              <span class="fleches"></span>
+            </div>           
+            <div class="formations-contentC">
+              <a href="concours.html" class="js-forma js-link con">Formation Préparation Aux Concours</a>
+              <a href="langues.html" class="con">Formation Langues Étrangères</a>
+              <a href="infographie.html" class="con">Formation en Infographie</a>
+              <a href="bureautique.html" class="con">Formation en Bureautique</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+  </header>
+  <main>
+    <div id="acceuil" class="contenu active">
+      <div class="h1-d">
+        <h1 class="h1-c">VOTRE REUSSITE ACADEMIQUE COMMENCE PAR ICI?</h1>
+      </div>
+      <p class="para">
+        Sans distinction d’origine, de milieu ou de moyens
+        financiers, nous vous assurons un accompagnement
+        de qualité pour atteindre vos objectifs 
+        académiques et professionnels.
+      </p>
+      <div class="acceuil-first">
+        <div class="acceuil-first-d">
+          <h2>LE CONCEPT INFOS</h2>
+          <p class="acceuil-first-p">
+            InfoS est un acteur majeur dans la préparation 
+            aux concours, formation en infographie et bureautique
+            au Maroc. Nous proposons des formations scolaires 
+            de qualité à des prix très abordables pour l’ensemble 
+            des étudiants.
+            <br>
+            • La situation financière de votre famille ne sera plus un frein à votre réussite. <br>
+            • Ni votre milieu social, ni votre origine n’auront d’impact sur votre parcours vers la réussite. <br>
+            • Apprenez ce que vous souhaitez, où que vous soyez, aux quatre coins du Maroc. <br>
+            • Profitez de l’enseignement des meilleurs pour atteindre l’excellence. <br>
+          </p>
+        </div>
+        <img src="images/Students in study group.png" class="acceuil-first-i">
+      </div>
+      <div class="acceuil-second">
+        <h3>NOS FORMATIONS</h3>
+        <div class="content-wr">
+          <div class="formations-s">
+            <div class="prepa-c">
+              <img src="images/2012_matsui_study_room_group_shot.jpg" class="formations-image">
+              <div class="logoN">
+                <img src="images/graduation-hat.png" class="gra">
+              </div>
+              <div class="combine">
+                <a href="concours.html" p>Préparations concours</a>
+                <a class="plus" href="details.html">Voir plus</a>
+              </div>
+            </div>
+            <div class="langue">
+              <img src="images/file-20241021-15-io1ub6.avif" class="formations-image">
+              <div class="logoN">
+                <img src="images/translation.png" class="trans">
+              </div>
+              <div class="combine">
+                <a href="langues.html" l>Cours de langues</a>
+                <a class="plus" href="langues.html">Voir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="acceuil-third">
+      <h2>POURQUOI INFOS</h2>
+      <p class="acceuil-third-p">
+        La mission d'InfoS est d'assurer à chaque étudiant
+        au Maroc quels que soient son origine, son milieu
+        social ou sa situation financière, une formations
+        de qualité pour réussir sa carriere académique et
+        professionnelle.
+      </p>
+      <div class="div-ac">
+        <h3 class="h3-1">MEILLEURS FORMATEURS AU MAROC</h3>
+      </div>      
+      <p class="acceuil-third-p2">
+        Nos formteurs sont tous passionnés par le domaine 
+        qu'ils transmettent et sont sélectionnés parmi les
+        meilleurs étudiants au Maroc. Ils sont formés à la
+        pédagogie tout au long de notre relation avec eux,
+        ce qui rend nos formations plus efficaces et plus
+        plaisantes pour nos formés.
+      </p>
+      <img src="images/acceuil-third1.png" class="acceuil-third-i">
+      <div class="div-ac">
+        <h3 class="h3-2">MÉTHODE D'APPRENTISSAGE INNOVANTE</h3>
+      </div>     
+      <p class="acceuil-third-p2">
+        Nos formations sont 100% pratiques et basées sur le partage d'expérience directe de nos formateurs qui ont déjà réussi leur parcours académique.
+      </p>
+      <img src="images/acceuil-third2.png" class="acceuil-third-i">
+      <div class="div-ac">
+       <h3 class="h3-3">TARIFS SYMBOLIQUES</h3>
+      </div>     
+      <p class="acceuil-third-p2">
+        InfoS propose des formations de qualité accessibles à tous
+        les étudiants au Maroc avec un prix symbolique. 
+      </p>
+      <img src="images/why5.png" class="acceuil-third-i">
+    </div>
+  </main>
+  <footer class="footer1">
+    <div class="footer-div1">
+      <h5 class="footer-h5">Info Saloua</h5>
+      <p class="para-info">
+        Info Saloua est le leader de la preparation aux concours
+        au Maroc. Notre mission est d'assurer à chaque étudiant
+        quels que soient aon origine, son milieu social, ou sa 
+        situation financière, une formation de qualité de réussir
+        sa carrière académique et professionnelle!
+      </p>
+    </div>
+    <div class="footer-div2">
+      <h5 class="footer-h5">Formations</h5>
+      <ul class="list-f">
+        <li><a href="concours.html">Préparation aux concours</a></li>
+        <li><a href="langues.html">Cours de langues présentiel</a></li>
+        <li><a href="infographie.html">Formation en Infographie</a></li>
+        <li><a href="bureautique.html">Formation en Bureautique</a></li>
+      </ul>
+    </div>     
+    <div class="footer-div3">
+      <h5 class="footer-h5">Centres De Formations : </h5>
+      <p class="para-info">
+        Méknes : 14 avenue Hassan II Hamria Près du marché central
+        même entrée Pizerria Milano
+      </p>
+    </div>   
+    <div class="footer-div4">
+      <h5 class="footer-h5">Contacts</h5>
+      <a href="https://wa.me/212661532326" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <p class="para-info">
+          Méknes : 0661532326 / 0691060245
+        </p> 
+      </a>      
+    </div>   
+  </footer>
+  <footer class="footer2">
+    <div class="footer2-div">
+      Tout les droits sont réservés &copy; InfoS
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

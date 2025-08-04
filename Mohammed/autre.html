@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flip Toggle Divs</title>
+  <style>
+    .enregistrement-suc {
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      overflow: auto; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .enregi-content {
+      border-radius: 20px;
+      background-color: #fff;
+      padding: 30px;
+      width: 400px;
+      height: 300px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: mohamed 0.3s ease;
+    }
+    .close {
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      color: #aaa;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #000;
+    }
+    .content-1 {
+      display: grid;
+      place-items: center;
+    }
+
+    .check {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class='enregistrement-suc'>           
+    <div class='enregi-content'>
+      <span class='close' onclick='closeModal()'>&times;</span>
+      <div class="content-1">
+        <img src="images/check.png" class="check">
+        <h2>Enregistrer avec Succes</h2>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>
