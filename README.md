@@ -1,2 +1,1 @@
-An example of a website inspired by Kreis with a few additions. It offers a courses on educational materials. You can benefit from some of the ideas.
-This is my first big project, we hope for more development, thank you for your review...
+
